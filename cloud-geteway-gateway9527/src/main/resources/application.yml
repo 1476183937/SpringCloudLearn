@@ -1,0 +1,34 @@
+server:
+  port: 9527
+
+
+eureka:
+  instance:
+    hostname: cloud-gateway-service
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: payment-route1
+#          uri: http://localhost:8001  #不启用负载均衡
+          uri: lb://CLOUD-PAYMENT-SERVICE #启用负载均衡
+          predicates:
+            - Path=/payment/get/** #断言，路径相匹配的进行路由
+        - id: payment-route2
+#          uri: http://localhost:8001 #不启用负载均衡
+          uri: lb://CLOUD-PAYMENT-SERVICE #启用负载均衡
+          predicates:
+            - Path=/payment/lb/** #断言，路径相匹配的进行路由
+#            - After=2020-04-25T10:44:15.064+08:00[Asia/Shanghai] #请求在2020-04-25 10:44:15之前都没有用
+#            - Cookie=username,aaa #请求中的cookie必须有username属性，值为aaa
+#            - Header=X-Request-Id,\d+ #请求头要有 X-Request-Id属性并且值为整数的正则表达式
+#            - Host=**.atguigu.com
+#            - Method=GET
+#            - Query=username, \d+ # 要有参数名username并且值还要是正整数才能路由

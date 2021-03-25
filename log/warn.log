@@ -1,0 +1,12 @@
+11:37:30.125 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:37:30.141 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:42:41.330 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:42:43.839 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:46:28.805 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:46:28.840 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:46:58.575 [http-nio-9001-exec-1] ERROR com.hnust.springcloud.controller.PaymentController - error error error
+11:46:58.575 [http-nio-9001-exec-1] WARN  com.hnust.springcloud.controller.PaymentController - warn warn warn
+11:50:38.256 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:50:38.260 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:51:01.566 [http-nio-9001-exec-1] ERROR com.hnust.springcloud.controller.PaymentController - error error error
+11:51:01.567 [http-nio-9001-exec-1] WARN  com.hnust.springcloud.controller.PaymentController - warn warn warn

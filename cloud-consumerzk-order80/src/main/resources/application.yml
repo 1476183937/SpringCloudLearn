@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud: #注册到zookeeper
+    zookeeper:
+      connect-string: 192.168.177.103:2181 #zookeeper（集群）地址
+      discovery:
+        instanceHost: 192.168.177.1 #调用服务方的ip和端口号
+        instance-port: 80

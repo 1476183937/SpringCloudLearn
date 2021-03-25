@@ -1,0 +1,16 @@
+11:50:33.696 [restartedMain] INFO  com.hnust.springcloud.PaymentMain9001 - No active profile set, falling back to default profiles: default
+11:50:35.491 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+11:50:35.492 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:50:35.492 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:50:35.636 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:50:38.256 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:50:38.256 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:50:38.260 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+11:50:38.261 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:50:43.508 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+11:50:43.734 [restartedMain] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP nacos-payment-provider 192.168.177.1:9001 register finished
+11:50:46.477 [restartedMain] INFO  com.hnust.springcloud.PaymentMain9001 - Started PaymentMain9001 in 20.312 seconds (JVM running for 24.487)
+11:50:48.216 [RMI TCP Connection(10)-192.168.177.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:51:01.566 [http-nio-9001-exec-1] ERROR com.hnust.springcloud.controller.PaymentController - error error error
+11:51:01.567 [http-nio-9001-exec-1] WARN  com.hnust.springcloud.controller.PaymentController - warn warn warn
+11:51:01.567 [http-nio-9001-exec-1] INFO  com.hnust.springcloud.controller.PaymentController - info info info
